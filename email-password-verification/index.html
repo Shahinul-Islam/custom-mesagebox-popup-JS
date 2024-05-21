@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- connect with css file -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Heading -->
+		<h2>JavaScript Custom Prompt/Message box</h2>
+
+		<!-- Button to trigger the modal -->
+		<button onclick="openModal()">Try it</button>
+
+		<!-- Display area for demo purpose -->
+		<p id="demo"></p>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content" id="modalContent">
+				<!-- Close button -->
+				<span class="close" onclick="closeModal()">&times;</span>
+				<!-- Prompt text -->
+				<p>Please enter your email and password:</p>
+				<!-- Email input field -->
+				<input
+					type="email"
+					id="emailInput"
+					class="modal-input"
+					placeholder="Email"
+				/>
+				<br />
+				<!-- Password input field -->
+				<input
+					type="password"
+					id="passwordInput"
+					class="modal-input"
+					placeholder="Password"
+				/>
+				<br />
+				<!-- Submit button -->
+				<button id="modalButton" onclick="submitCredentials()">Submit</button>
+			</div>
+		</div>
+		<!-- connect the script/JS file -->
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- connect css file -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h2>JavaScript Custom Prompt</h2>
+
+		<button onclick="openModal()">Try it</button>
+
+		<p id="demo"></p>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content" id="modalContent">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<p>Please enter your name:</p>
+				<input type="text" id="modalInput" placeholder="Harry Potter" />
+				<br />
+				<button id="modalButton" onclick="submitName()">Submit</button>
+			</div>
+		</div>
+		<!-- connect js file -->
+		<script src="main.js"></script>
+	</body>
+</html>
